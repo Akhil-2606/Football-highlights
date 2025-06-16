@@ -27,3 +27,24 @@ Adds clear text and background colors to highlight what’s happening.
 Saves all gesture times and scores in a CSV file.
 
 Creates a final highlight video that can be easily shared.
+# Setup 
+Step 1: Detect Gestures and Generate Scores 
+
+python Computer_vision.py
+
+Ensure the video filename is set correctly inside the script (e.g., VideoA.mp4).
+
+Step 2: Generate Highlights from CSV
+
+python Highlights1.py
+
+Make sure to update the csv_files list with your .csv files:
+
+csv_files = ['VideoA_scores.csv']
+
+# Output
+VideoA_scores.csv – Log of score and gesture events.
+
+VideoA_highlights.mp4 – Automatically generated highlight reel.
+
+
